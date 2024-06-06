@@ -14,4 +14,5 @@ type Category struct {
     Created_at *time.Time
     Updated_at *time.Time
     Deleted_at *time.Time
+    Contain_active_responser bool
 }

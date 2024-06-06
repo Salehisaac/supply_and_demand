@@ -12,7 +12,7 @@ type User struct {
     ChatID   string
     Type     string
     Name     string
-    Command  sql.NullString
+    Request_count  int
     Is_active bool
     Inactive_message sql.NullString
     Created_at *time.Time

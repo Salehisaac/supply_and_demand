@@ -12,13 +12,14 @@ import (
 
 
 func main() {
-    botToken := "6427555441:AAEgmiblShsDaDyVlkSclFeOVqS1XCbOe-8"
-    bot, err := app.NewBot(botToken)
+
+    //Creating new Instance of Bot
+    bot, err := app.NewBot()
     if err != nil {
         log.Fatalf("Error initializing bot: %v", err)
     }
 
-    
+    // Starting the Bot
     log.Println("Starting bot...")
     if err := bot.Start(); err != nil {
         log.Fatalf("Error starting bot: %v", err)
